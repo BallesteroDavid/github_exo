@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo GitHub</title>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/script.js" defer></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <h1>Mamma Mia</h1>
-        <h2>Poltrone e sofa</h2>
-        <h3>Autentica qualità</h3>
+    <div id="top"></div>
+    <header class="site-header">
+        <div class="top-bar">
+            <p>Tradizione italiana • Burrata • Pizza • Pasta</p>
+        </div>
+
+        <div class="header-inner">
+            <div class="logo-block">
+                <span class="logo-mark">🍝</span>
+                <div>
+                    <h1>Il ristorante di Loriana</h1>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#top">Accueil</a>
+                <a href="#chef">La chef</a>
+                <a href="#avis">Avis</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section style="display: flex; flex-direction: column; margin: 30px; justify-content: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
@@ -45,7 +62,7 @@
         </section>
         <section class="loriana-review-section">
             <div class="loriana-container">
-                <div class="loriana-hero">
+                <div class="loriana-hero" id="chef">
                     <div class="loriana-intro">
                         <p class="loriana-subtitle">Sapori autentici</p>
                         <h2>Partagez votre expérience chez Loriana</h2>
@@ -113,15 +130,35 @@
                     <p id="formMessage" class="form-message"></p>
                 </form>
 
-                <div class="reviews-list-wrapper">
+                <div class="reviews-list-wrapper" id="avis">
                     <h3>Avis des clients</h3>
                     <div id="reviewsList" class="reviews-list"></div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        Made in Italia 
+    <footer class="site-footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Mamma Mia</h3>
+                <p>La cucina italiana de la chef Loriana.</p>
+            </div>
+
+            <div class="footer-info">
+                <p><strong>Adresse :</strong> Via del Gusto, Bordeaux</p>
+                <p><strong>Horaires :</strong> Lun - Dim / 12h00 - 23h00</p>
+                <p><strong>Email :</strong> contact@mammamia.it</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+
+        <p class="footer-bottom">© 2026 Mamma Mia — Made in Italia con amore</p>
     </footer>
+
 </body>
 </html>

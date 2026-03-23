@@ -16,3 +16,5 @@ c'est bon pour toi tout fonctionne ?
 tu peux faire une git pull origin main pour test ?
 
 Section Chef Loriana + css + js fait 
+
+Header + footer fix fait
