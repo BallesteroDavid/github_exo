@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo GitHub</title>
 </head>
 <body>
-    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <header>
+        <h1>Mamma Mia</h1>
+        <h2>Poltrone e sofa</h2>
+        <h3>Autentica qualità</h3>
+    </header>
+    <main>
         <section style="display: flex; flex-direction: column; margin: 30px; justify-content: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
             <h2>3 articles</h2>
             <div style="display: flex; margin: 30px; gap: 30px; justify-content: center;">
@@ -44,8 +41,25 @@
                 </article>
             </div>
         </section>
+        <section class="contact-section">
+            <h2>Contact</h2>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
     </main>
-</body>
-</html>
+    <footer>
+        Made in Italia 
+    </footer>
 </body>
 </html>
