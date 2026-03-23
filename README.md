@@ -12,7 +12,7 @@ Fait :
 - Dossier Assets contenant style.css fait
 - ficher script.js créé mais vide
 
-c'est bon pour toi tout fonctionne ?
+c'est bon pour toi tout fonctionne ? oui, je crois
 tu peux faire une git pull origin main pour test ?
 
 Section Chef Loriana + css + js fait 
