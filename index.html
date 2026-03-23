@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo GitHub</title>
+    <script src="./assets/script.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <header>
@@ -41,21 +43,81 @@
                 </article>
             </div>
         </section>
-        <section class="contact-section">
-            <h2>Contact</h2>
+        <section class="loriana-review-section">
+            <div class="loriana-container">
+                <div class="loriana-hero">
+                    <div class="loriana-intro">
+                        <p class="loriana-subtitle">Sapori autentici</p>
+                        <h2>Partagez votre expérience chez Loriana</h2>
+                        <p class="loriana-text">
+                            Burrata crémeuse, pizza généreuse, pasta savoureuse…
+                            dites-nous ce que vous avez pensé de la cuisine de la chef Loriana.
+                        </p>
+                    </div>
 
-            <form action="#" method="post" class="contact-form">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required>
+                    <div class="loriana-chef">
+                        <img src="assets/img/chef-loriana.jpg" alt="La chef Loriana">
+                    </div>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <form id="reviewForm" class="loriana-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="form-group">
+                            <label for="dish">Plat préféré</label>
+                            <select id="dish" name="dish" required>
+                                <option value="">Choisissez un plat</option>
+                                <option value="Burrata">Burrata</option>
+                                <option value="Pizza">Pizza</option>
+                                <option value="Pasta">Pasta</option>
+                                <option value="Dessert">Dessert</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <button type="submit">Envoyer</button>
-            </form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rating">Note</label>
+                            <select id="rating" name="rating" required>
+                                <option value="">Choisissez une note</option>
+                                <option value="5">5 étoiles</option>
+                                <option value="4">4 étoiles</option>
+                                <option value="3">3 étoiles</option>
+                                <option value="2">2 étoiles</option>
+                                <option value="1">1 étoile</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ambience">Ambiance</label>
+                            <select id="ambience" name="ambience" required>
+                                <option value="">Choisissez une ambiance</option>
+                                <option value="Chaleureuse">Chaleureuse</option>
+                                <option value="Élégante">Élégante</option>
+                                <option value="Conviviale">Conviviale</option>
+                                <option value="Romantique">Romantique</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">Votre commentaire</label>
+                        <textarea id="comment" name="comment" rows="5" placeholder="Parlez-nous de votre expérience..." required></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer mon avis</button>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+
+                <div class="reviews-list-wrapper">
+                    <h3>Avis des clients</h3>
+                    <div id="reviewsList" class="reviews-list"></div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
